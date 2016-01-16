@@ -15,7 +15,7 @@ public class MuvrActivity extends Activity {
 		Thread timer=new Thread(){
 			public void run(){
 				try{
-					sleep(6000);
+					sleep(1000);
 				}
 				catch(Exception e)
 				{

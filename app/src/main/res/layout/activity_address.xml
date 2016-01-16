@@ -37,8 +37,8 @@
         android:layout_marginTop="30dp"
         android:text="Start Location"
         android:textAppearance="?android:attr/textAppearanceLarge" />
-
-    <EditText
+    <!-- Changing this EditText into AutoCompleteTextView -->
+    <AutoCompleteTextView
         android:id="@+id/muvr_editStart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -50,10 +50,10 @@
         android:ems="10" >
 
         <requestFocus />
-    </EditText>
+    </AutoCompleteTextView>
 
     <TextView
-        android:id="@+id/muvr_editEnd"
+        android:id="@+id/muvr_endLocation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/muvr_editStart"
@@ -61,14 +61,14 @@
         android:layout_marginTop="25dp"
         android:text="End Location"
         android:textAppearance="?android:attr/textAppearanceLarge" />
-
-    <EditText
-        android:id="@+id/editEnd"
+    <!-- Changing this EditText into AutoCompleteTextView -->
+    <AutoCompleteTextView
+        android:id="@+id/muvr_editEnd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/muvr_editStart"
         android:layout_alignRight="@+id/muvr_editStart"
-        android:layout_below="@+id/muvr_editEnd"
+        android:layout_below="@+id/muvr_endLocation"
         android:layout_marginTop="21dp"
         android:hint="Type here"
         android:ems="10" />
@@ -77,7 +77,7 @@
         android:id="@+id/muvr_go"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editEnd"
+        android:layout_below="@+id/muvr_editEnd"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="32dp"
         android:text="Go" />
